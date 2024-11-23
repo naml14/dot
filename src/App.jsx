@@ -15,7 +15,7 @@ export default function App() {
     { icon: <Tiktok className="h-6 w-6" />, label: 'TikTok', url: 'https://tiktok.com/@elantrodedager', color: 'hover:text-black' },
     { icon: <Youtube className="h-6 w-6" />, label: 'DotDager', url: 'https://www.youtube.com/@DotDager', color: 'hover:text-red-500' },
     { icon: <Youtube className="h-6 w-6" />, label: 'Live clips', url: 'https://youtube.com/@DagerLive', color: 'hover:text-red-500' },
-    { icon: <Discord className="h-6 w-6" />, label: 'Discord', url: 'https://discord.gg/4NFk6TamAB', color: 'hover:text-indigo-500' },
+    { icon: <Discord className="h-6 w-6" />, label: 'Discord', url: 'https://discord.gg/4NFk6TamAB', color: 'hover:text-blue-700' },
     { icon: <Github className="h-6 w-6" />, label: 'GitHub', url: 'https://github.com/MarianoVilla', color: 'hover:text-gray-800' },
     { icon: <Music2 className="h-6 w-6" />, label: 'Music', url: 'https://youtube.com/c/DagerMusic', color: 'hover:text-red-500' },
     { icon: <Twitch className="h-6 w-6" />, label: 'Twitch', url: 'https://twitch.tv/dagerxiv', color: 'hover:text-purple-500' },
@@ -26,11 +26,11 @@ export default function App() {
   ]
 
   const passions = [
-    { icon: <Code size={24} />, text: "Programación", image: "https://pixabay.com/get/geddcd88bf0cc30d4f5ee6c66e26151ed02967ba1e7ff571b883534c846cc3c9a7db4a652a270da5e4b5a3b4bde68589ae69fbb8039d2883a412f0677df4b13d32711ba4cc1b3b9a221ede5f3df9c8d16_640.jpg", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." },
-    { icon: <Cat size={24} />, text: "Gatos", image: "https://pixabay.com/get/g51067dd7599878d21ec2d07b1b57e85352ac3a2bf36f437722c8544b14137fbcf1211cd4c73e7dbb65ee15379970b9411d1a756e314ce1bac6b2d552fef57cdb4046b2c3bdfbff0d26d6e833c3f7dd68_640.jpg", description: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat." },
-    { icon: <Guitar size={24} />, text: "Guitarras", image: "https://pixabay.com/get/g7ddc31ee324d0c4c53914f05d0a5eadca91a0f312165c18380d9e6b25ca4cf85abf20cd71140f19325e9d44332d2e272a0410d65071c4edd65fa5b5ac02574de53c2637c152d1b8fd9df53cdcbbe6395_640.jpg", description: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur." },
-    { icon: <Pickle size={24} />, text: "Pepino", image: "pepino1.webp", description: "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." },
-    { icon: <BookOpen size={24} />, text: "Filosofía", image: "https://pixabay.com/get/g910af91e56be3c6456b211fbc37ab301ca81368d9b45efde9d866663eff1f5d8b5048a15fe0fab360b94092d39e3b3f7b4ee783fc50b0d2ae73730d4c449261373b1f01067108d9e611c94fdb487c6a5_640.jpg", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." },
+    { icon: <Code size={24} />, text: "Programación", image: "programacion.jpg", description: "Como creen que estoy todo el día la gente que no entiende un choto de programación." },
+    { icon: <Cat size={24} />, text: "Gatos", image: "gatos.jpg", description: "Una gran compañía mientras debugueo código." },
+    { icon: <Guitar size={24} />, text: "Guitarras", image: "https://pixabay.com/get/g7ddc31ee324d0c4c53914f05d0a5eadca91a0f312165c18380d9e6b25ca4cf85abf20cd71140f19325e9d44332d2e272a0410d65071c4edd65fa5b5ac02574de53c2637c152d1b8fd9df53cdcbbe6395_640.jpg", description: "Mi lado creativo, mirar los links no miento." },
+    { icon: <Pickle size={24} />, text: "Pepino", image: "pepino1.webp", description: "¿En qué cree que se basa lo de contador serial de chistes de mierda?" },
+    { icon: <BookOpen size={24} />, text: "Filosofía", image: "filosofia.jpg", description: "Leo luego existo, o como chota se diga." },
     { icon: <Trees size={24} />, text: "Lumberjack", onClick: () => setShowGame(true) },
   ]
 
@@ -120,7 +120,7 @@ export default function App() {
                   className="rounded-md"
                 />
               </div>
-              <DialogDescription>
+              <DialogDescription className="text-xl">
                 {passion.description}
               </DialogDescription>
             </DialogContent>
